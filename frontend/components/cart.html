@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../assets/logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/button.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <title>Cart</title>
+  </head>
+
+  <body>
+    <!-- TOPBAR -->
+    <section id="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-item">
+          <img src="../assets/icons/telephone.png" class="icon1" />
+          <a>(+855) 086-833-936</a>
+        </div>
+        <div class="topbar-item">
+          <img src="../assets/icons/email.png" class="icon2" />
+          <a>davirakbobcboy@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEADER -->
+    <section id="header">
+      <div class="container header-inner">
+        <!-- Logo & Navbar-->
+        <a href="../index.html" id="lg-bag">
+          <img src="../assets/logo.jpg" class="logo" alt="" />
+        </a>
+        <ul id="navbar">
+          <!-- Search -->
+          <form>
+            <div class="search">
+              <span class="search-icon fas fa-search"></span>
+              <input class="search-input" type="search" placeholder="Search" />
+            </div>
+          </form>
+          <!-- Login button -->
+          <li><a href="../components/login.html" id="lg-bag"> Login </a></li>
+          <!-- Cart button -->
+          <a class="cart-btn" href="../components/cart.html">
+            <img src="../assets/icons/cart.png" alt="Cart" />
+            <span class="cart-count"> 0 </span>
+          </a>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CART -->
+    <section id="cart">
+      <!-- banner -->
+      <div class="container banner">
+        <i class="fa-solid fa-cart-shopping cart"></i>
+        <h2>Shopping Cart</h2>
+      </div>
+
+      <!-- cart item-->
+      <div class="container cart-inner">
+        <!-- col1 -->
+        <div class="col1">
+          <div class="cart-row">
+            <!-- [cart.js] Cart items will be dynamically inserted here -->
+          </div>
+        </div>
+        <!-- col2 -->
+        <div class="col2">
+          <h3>Cart Totals</h3>
+          <h4><strong> Total: $0.00 </strong></h4>
+          <button class="normal">Proceed to checkout</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div class="col1">
+          <img class="logo" src="../assets/logo.jpg" alt="" />
+        </div>
+        <div class="col2">
+          <h4>Tel: (+855) 086-833-936</h4>
+          <h4>Working Hours: 8 AM - 5 PM</h4>
+          <h4>Address: បុរីពិភពថ្មីចំការដូង១ ផ្លូវB ផ្ទះ19</h4>
+          <h4>© 2025 VB STORE RC. All right reserved.</h4>
+        </div>
+        <div class="col3 follow">
+          <h4>Follow Us</h4>
+          <div class="row">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-telegram"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/cart.js"></script>
+</html>
