@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');  
+
+:root {
+  --primary: rgba(220, 38, 38, 1);      /* Red */
+  --secondary:  rgba(255, 193, 7, 1);   /* Yellow */
+  --tertiary: rgba(255, 255, 255, 1);   /* White */
+  --background: rgba(247, 247, 247, 1); 
+  --text-dark: rgba(34, 34, 34, 1);
+  --text-muted: rgba(136, 136, 136, 1);
+  --border: rgba(204, 204, 204, 1);
+  --font-heading-family: 'Inter', sans-serif;
+  --font-header-weight: 600;
+  --font-body-family: 'Inter' , sans-serif;
+  --font-body-weight: 400;  
+}

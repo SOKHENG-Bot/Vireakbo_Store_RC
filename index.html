@@ -1,455 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- HEAD SECTION -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-COMOMPATIBLE" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Home </title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="script.js">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <title>VB STORE RC</title>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+  </head>
 
-<body> 
-  <section id="header"> 
-      <a href="#"><img src="assets/logo.jpg" class="logo" alt="" style="width: 67px; height: 67px;"></a>
-      <div>
+  <!-- BODY SECTION -->
+
+  <body>
+    <!-- TOPBAR -->
+    <section id="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-item">
+          <img src="assets/icons/telephone.png" class="icon1" />
+          <a>(+855) 086-833-936</a>
+        </div>
+        <div class="topbar-item">
+          <img src="assets/icons/email.png" class="icon2" />
+          <a>davirakbobcboy@gmail.com</a>
+        </div>
+      </div>–
+    </section>  
+
+    <!-- HEADER -->
+    <section id="header">
+      <div class="container header-inner">
+        <!-- Logo-->
+        <a href="index.html" id="lg-bag">
+          <img src="assets/logo.jpg" class="logo" alt="" />
+        </a>
+
+        <!-- Navbar -->
         <ul id="navbar">
-          <li> <a class= "active" href="index.html"> Home </a> </li>
-          <li> <a href="components/shop.html"> Shop </a> </li>
-          <li> <a href="components/blog.html"> Blog </a> </li>
-          <li> <a href="components/about.html"> About </a> </li>
-          <li> <a href="components/contact.html"> Contact </a> </li>
-          <li> <a href="components/cart.html" id="lg-bag"> <i class="fas fa-shopping-bag"></i> </a> </li>
-          <a href="#" id="close"> <i class="fa fa-times" aria-hidden="true"></i> </a>
+          <!-- Search -->
+          <!-- <form>
+            <div class="search">
+              <span class="search-icon fas fa-search"></span>
+              <input class="search-input" type="search" placeholder="Search" />
+            </div>
+          </form> -->
+          <!-- Login button -->
+          <li><a href="../components/login.html" id="lg-bag"> Login </a></li>
+          <!-- Cart button -->
+          <a class="cart-btn" href="components/cart.html">
+            <img src="assets/icons/cart.png" alt="Cart" />
+            <span class="cart-count"> 0 </span>
+          </a>
         </ul>
       </div>
+    </section>
 
-      <div id="mobile"> 
-        <a href="components/cart.html"> <i class="fas fa-shopping-bag"></i> </a>
-        <i id="bar" class="fas fa-outdent"></i>  
+    <!-- HERO -->
+    <section id="hero">
+      <div class="container hero-inner">
+        <h4>Welcome to VB STORE RC</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button class="normal">Shop Now</button>
       </div>
-  </section>
+    </section>
 
-  <section id="hero"> 
-    <h4> Trade-in-offer</h4>
-    <h2> Super value deals </h2>
-    <h1> On all products </h1>
-    <p> Save more with coupons & up to 70% off! </p>
-    <button> Shop Now </button>
-  </section>
-
-  <section id="feature" class="section-p1"> 
-    <div class="fe-box"> 
-      <img src="assets/features/f1.png" alt="">
-      <h6> Free Shipping </h6>
-    </div>
-    <div class="fe-box"> 
-      <img src="assets/features/f2.png" alt="">
-      <h6> Online Order </h6>
-    </div>
-    <div class="fe-box"> 
-      <img src="assets/features/f3.png"  alt="">
-      <h6> Save Money </h6>
-    </div>
-    <div class="fe-box"> 
-      <img src="assets/features/f4.png" alt="">
-      <h6> Promotions </h6>
-    </div>
-    <div class="fe-box"> 
-      <img src="assets/features/f5.png"  alt="">
-      <h6> Happy Sell </h6>
-    </div>
-    <div class="fe-box"> 
-      <img src="assets/features/f6.png"  alt="">
-      <h6> F24/7 Support </h6>
-    </div>
-  </section>
-
-  <section id="product1" class="section-p1">
-  <h2>Feature Products</h2>
-  <p> Summer Collection New Modern Design </p>
-  <div class="pro-container">
-    <div class="pro" id="pro1">
-      <img src="assets/products/f1.jpg" alt="">
-      <div class="des">
-        <span> adidas </span>
-        <h5> Fit Shirt </h5>
-        <div class="star">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h4> $78 </h4>
+    <!-- CATEGORY -->
+    <section id="category">
+      <div
+        class="container category-inner"
+        role="tablist"
+        aria-label="Categories"
+      >
+        <button class="category-btn active" data-category="">
+          All categories
+        </button>
+        <button class="category-btn" data-category="electronic">
+          ELECTRONIC
+        </button>
+        <button class="category-btn" data-category="car-model">
+          CAR MODEL
+        </button>
+        <button class="category-btn" data-category="toys">TOYS</button>
+        <button class="category-btn" data-category="accessories">
+          ACCESSORIES
+        </button>
       </div>
-      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-    </div>
+    </section>
 
-    <div class="pro" id="pro1">
-      <img src="assets/products/f2.jpg" alt="">
-      <div class="des">
-        <span> adidias </span>
-        <h5> Fit Shirt </h5>
-        <div class="star">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h4> $78 </h4>
-      </div>
-      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-    </div>
-
-    <div class="pro" id="pro1">
-      <img src="assets/products/f3.jpg" alt="">
-      <div class="des">
-        <span> adidas </span>
-        <h5> Fit Shirt </h5>
-        <div class="star">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h4> $78 </h4>
-      </div>
-      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-    </div>
-
-    <div class="pro" id="pro1">
-      <img src="assets/products/f4.jpg" alt="">
-      <div class="des">
-        <span> adidas </span>
-        <h5> Fit Shirt </h5>
-        <div class="star">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h4> $78 </h4>
-      </div>
-      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-    </div>
-
-    <div class="pro" id="pro1">
-      <img src="assets/products/f5.jpg" alt="">
-      <div class="des">
-        <span> adidas </span>
-        <h5> Fit Shirt </h5>
-        <div class="star">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h4> $78 </h4>
-      </div>
-      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-    </div>
-
-    <div class="pro" id="pro1">
-      <img src="assets/products/f6.jpg" alt="">
-      <div class="des">
-        <span> adidas </span>
-        <h5> Fit Shirt </h5>
-        <div class="star">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h4> $78 </h4>
-      </div>
-      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-    </div>
-
-    <div class="pro" id="pro1">
-      <img src="assets/products/f7.jpg" alt="">
-      <div class="des">
-        <span> adidas </span>
-        <h5> Fit Shirt </h5>
-        <div class="star">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h4> $78 </h4>
-      </div>
-      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-    </div>
-
-    <div class="pro" id="pro1">
-      <img src="assets/products/f8.jpg" alt="">
-      <div class="des">
-        <span> adidas </span>
-        <h5> Fit Shirt </h5>
-        <div class="star">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-        </div>
-        <h4> $78 </h4>
-      </div>
-      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-    </div>
-  </div>  
-  </section>
-
-  <section id="banner" class="section-m1"> 
-    <h4> Repair Services </h4>
-    <h2> Up to <span> 70% Off </span> -All t-Shirts & Accessories </h2>
-    <button class="normal"> Explore More </button>
-  </section>  
-
-  <section id="product1" class="section-p1">
-    <h2>New Arrivals</h2>
-    <p> Summer Collection New Modern Design </p>
-    <div class="pro-container">
-      <div class="pro" id="pro1">
-        <img src="assets/products/n1.jpg" alt="">
-        <div class="des">
-          <span> adidas </span>
-          <h5> Fit Shirt </h5>
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+    <!-- PRODUCT -->
+    <section id="product1">
+      <div class="container">
+        <h4 class="product1-title">All categories</h4>
+        <div class="product1-inner">
+          <div class="pro" id="pro1">
+            <img src="assets/products/p1.jpg" alt="Product 1" />
+            <div class="des">
+              <span> ELECTRONIC </span>
+              <h5>ESC</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
           </div>
-          <h4> $78 </h4>
-        </div>
-        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
-  
-      <div class="pro" id="pro1">
-        <img src="assets/products/n2.jpg" alt="">
-        <div class="des">
-          <span> adidias </span>
-          <h5> Fit Shirt </h5>
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+
+          <div class="pro" id="pro2">
+            <img src="assets/products/p2.jpg" alt="" />
+            <div class="des">
+              <span> CAR MODEL </span>
+              <h5>MN</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
           </div>
-          <h4> $78 </h4>
-        </div>
-        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
-  
-      <div class="pro" id="pro1">
-        <img src="assets/products/n3.jpg" alt="">
-        <div class="des">
-          <span> adidas </span>
-          <h5> Fit Shirt </h5>
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+
+          <div class="pro" id="pro3">
+            <img src="assets/products/p3.jpg" alt="" />
+            <div class="des">
+              <span> CAR MODEL </span>
+              <h5>WPL</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
           </div>
-          <h4> $78 </h4>
-        </div>
-        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
-  
-      <div class="pro" id="pro1">
-        <img src="assets/products/n4.jpg" alt="">
-        <div class="des">
-          <span> adidas </span>
-          <h5> Fit Shirt </h5>
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+
+          <div class="pro" id="pro4">
+            <img src="assets/products/p4.jpg" alt="" />
+            <div class="des">
+              <span> CAR MODEL </span>
+              <h5>WLTOYS</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
           </div>
-          <h4> $78 </h4>
-        </div>
-        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
-  
-      <div class="pro" id="pro1">
-        <img src="assets/products/n5.jpg" alt="">
-        <div class="des">
-          <span> adidas </span>
-          <h5> Fit Shirt </h5>
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+
+          <div class="pro" id="pro5">
+            <img src="assets/products/p5.jpg" alt="" />
+            <div class="des">
+              <span> CAR MODEL </span>
+              <h5>FMS</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
           </div>
-          <h4> $78 </h4>
-        </div>
-        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
-  
-      <div class="pro" id="pro1">
-        <img src="assets/products/n6.jpg" alt="">
-        <div class="des">
-          <span> adidas </span>
-          <h5> Fit Shirt </h5>
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+
+          <div class="pro" id="pro6">
+            <img src="assets/products/p6.jpg" alt="" />
+            <div class="des">
+              <span> CAR MODEL </span>
+              <h5>HUINA</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
           </div>
-          <h4> $78 </h4>
-        </div>
-        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
-  
-      <div class="pro" id="pro1">
-        <img src="assets/products/n7.jpg" alt="">
-        <div class="des">
-          <span> adidas </span>
-          <h5> Fit Shirt </h5>
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+
+          <div class="pro" id="pro7">
+            <img src="assets/products/p7.jpg" alt="" />
+            <div class="des">
+              <span> CAR MODEL </span>
+              <h5>DOUBLE E</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
           </div>
-          <h4> $78 </h4>
-        </div>
-        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-      </div>
-  
-      <div class="pro" id="pro1">
-        <img src="assets/products/n8.jpg" alt="">
-        <div class="des">
-          <span> adidas </span>
-          <h5> Fit Shirt </h5>
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+
+          <div class="pro" id="pro8">
+            <img src="assets/products/p8.jpg" alt="" />
+            <div class="des">
+              <span> CAR MODEL </span>
+              <h5>SCY</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
           </div>
-          <h4> $78 </h4>
+
+          <div class="pro" id="pro9">
+            <img src="assets/products/p9.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>MICROZONE</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro10">
+            <img src="assets/products/p10.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>HOT-RC</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro11">
+            <img src="assets/products/p11.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>SURPASS HOBBY</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro12">
+            <img src="assets/products/p12.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>MN</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro13">
+            <img src="assets/products/p13.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>FLY SKY</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro14">
+            <img src="assets/products/p14.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>DC MOTOR</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro15">
+            <img src="assets/products/p15.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>RC PART</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro16">
+            <img src="assets/products/p16.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>BATTERY</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro17">
+            <img src="assets/products/p17.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>BATTERY</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro18">
+            <img src="assets/products/p18.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>BATTERY</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro19">
+            <img src="assets/products/p19.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>BATTERY</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+
+          <div class="pro" id="pro20">
+            <img src="assets/products/p20.jpg" alt="" />
+            <div class="des">
+              <span> REMOTE CONTROL </span>
+              <h5>BATTERY</h5>
+              <h4>$78</h4>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
         </div>
-        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
       </div>
-    </div>  
-  </section>
+    </section>
 
-  <section id="sm-banner" class="section-p1">  
-    <div class="banner-box"> 
-      <h4> crazy deals </h4>
-      <h2> buy 1 get 1 free </h2>
-      <span> The best classic dress is an sale at cara </span>
-      <button class="white"> Learn More </button> 
-    </div>
-    <div class="banner-box banner-box2"> 
-      <h4> spring/summer </h4>
-      <h2> upcomming season</h2>
-      <span> The best classic dress is an sale at cara </span>
-      <button class="white"> Learn More </button> 
-    </div>
-  </section>
+    <section id="pagination">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+    </section>
 
-  <section id="banner3">  
-    <div class="banner-box"> 
-      <h2> SEASONAL SALE  </h2>
-      <h3> Winter Collection -50% OFF </h3>
-    </div>
-    <div class="banner-box banner-box2"> 
-      <h2> SEASONAL SALE  </h2>
-      <h3> Winter Collection -50% OFF </h3>
-    </div>
-    <div class="banner-box banner-box3"> 
-      <h2> SEASONAL SALE  </h2>
-      <h3> Winter Collection -50% OFF </h3>
-    </div>
-  </section>
-
-  <section id="newsletter" class="section-p1 section-m1">  
-    <div class="newstext"> 
-      <h4> Sign Up For Newsletters </h4>
-      <p> Get E-mail updates about our latest shop and <span> speacial offer. </span> </p>
-    </div>
-    <div class="form"> 
-      <input type="text" placeholder="Your email address">
-      <button class="normal"> Sign Up </button>
-  </section>
-
-  <footer class="section-p1"> 
-    <div class="col"> 
-      <img class="logo" src="assets/logo.jpg" alt="" style="width: 67px; height: 67px;">
-      <h4> Contact </h4>
-      <p> <strong> Address: </strong> ....  </p>
-      <p> <strong> Phone: </strong> .... </p>
-      <p> <strong> Hour: </strong> .... </p>
-      <div class="follow"> 
-        <h4> Follow us </h4>
-        <div class="icon">  
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-pinterest"></i>
-          <i class="fab fa-youtube"></i>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div class="col1">
+          <img class="logo" src="assets/logo.jpg" alt="" />
+        </div>
+        <div class="col2">
+          <h4>Tel: (+855) 086-833-936</h4>
+          <h4>Working Hours: 8 AM - 5 PM</h4>
+          <h4>Address: បុរីពិភពថ្មីចំការដូង១ ផ្លូវB ផ្ទះ19</h4>
+          <h4>© 2025 VB STORE RC. All right reserved.</h4>
+        </div>
+        <div class="col3 follow">
+          <h4>Follow Us</h4>
+          <div class="row">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-telegram"></i>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div class="col"> 
-      <h4> About </h4>
-      <a href=""> About Us</a>
-      <a href=""> Delivery </a>
-      <a href=""> Privacy Policy </a>
-      <a href=""> Terms of Condition </a>
-      <a href=""> Contact Us </a>
-    </div>
-
-    <div class="col"> 
-      <h4> My Account </h4>
-      <a href=""> Sign In</a>
-      <a href=""> View Cart </a>
-      <a href=""> My Wishlist </a>
-      <a href=""> Track My Order </a>
-      <a href=""> Help </a>
-    </div>
-
-    <div class="col install"> 
-      <h4> Install App </h4>
-      <p> From App Store or Google Play </p>
-      <div class="row"> 
-        <img src="assets/pay/app.jpg" alt="">
-        <img src="assets/pay/play.jpg" alt="">
-        <p> Secure Payment Gateways </p>
-        <img src="assets/pay/pay.png" alt="">
-      </div>
-    </div>
-
-    <div class="copyright"> 
-      <p> © 2023, Techy. All rights reserved. </p>
-  </footer>
-
-  <script src="script.js"> </script>
-</body>
-
+    </footer>
+  </body>
 </html>
