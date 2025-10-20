@@ -23,10 +23,17 @@ class Settings(BaseSettings):
     CORS_METHODS: List[str]
     CORS_HEADERS: List[str]
 
+    # Twilio SMS Configuration
+    TWILIO_ACCOUNT_SID: str
+    TWILIO_AUTH_TOKEN: str
+    TWILIO_PHONE_NUMBER: str
+    SMS_SENDER_ID: str
+
     class Config:
         env_file = ".env"
         case_sensitive = True
         extra = "ignore"
 
 
+# Global settings instance
 getSettings = Settings()

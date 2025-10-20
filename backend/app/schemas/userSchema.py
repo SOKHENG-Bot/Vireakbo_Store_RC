@@ -51,3 +51,8 @@ class UserResetPasswordSchema(BaseModel):
     newPassword: Annotated[
         str, Field(..., min_length=8, example="newstrongpassword456")
     ]
+
+
+class VerifyOtpSchema(BaseModel):
+    phoneNumber: Annotated[str, Field(..., example="+1234567890")]
+    otpCode: Annotated[str, Field(..., min_length=6, max_length=6, example="123456")]

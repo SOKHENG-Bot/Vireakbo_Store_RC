@@ -1,1 +1,0 @@
-# vb_store_rc

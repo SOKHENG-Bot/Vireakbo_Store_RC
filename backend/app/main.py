@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.v1.userRoute import userRoutes
 from app.core.database import databaseManager
 from app.core.settings import getSettings
-from app.models import orderModel, userModel  # noqa: F401
+from app.models import orderModel, otpModel, userModel  # noqa: F401
 
 logger = logging.getLogger(__name__)
 
